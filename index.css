@@ -6,7 +6,7 @@
     padding: 0;
     box-sizing: 0;
    font-family: 'Poppins', sans-serif;
-   background-color: #1b1f24;
+   background-color: black;
    /* background-color: #1b1f24; */
 }
 
@@ -24,7 +24,7 @@ nav{
     top: 0;
     box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.5);
     z-index: 10;
-
+   background:black;
 }
 
 .navbar-brand
@@ -32,6 +32,7 @@ nav{
     font-weight: bold;
     color: white;
     font-size: 50px;
+    background: black !important;
 }
 
 .nav-link
@@ -58,7 +59,7 @@ nav{
 }
 .video-container iframe {
     /* max-width: 90%; */
-    width: 100%;
+    width: 600%;
     max-height: 90%;
     height: 400px;
 }
@@ -141,3 +142,15 @@ button[type="submit"]:hover {
     justify-content: end;
     padding-right: 15rem;
 }
+
+.col-lg-2.col-md-2.col-sm-12.col-sm-12 {
+    margin-top: 20px;
+}
+
+/* .bg-dark {
+    background-color: black !important;
+}
+
+.bg-dark {
+    background-color: black !important;
+} */
