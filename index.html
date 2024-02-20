@@ -14,7 +14,20 @@
     <style>
     </style>
 </head>
+<script>
+    // Get the iframe element
+    var iframe = document.getElementById("youtube-video");
 
+    // Function to autoplay and loop the video
+    function playVideo() {
+        iframe.contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
+    }
+
+    // Autoplay the video when the iframe loads
+    iframe.onload = function() {
+        playVideo();
+    };
+</script>
 <body>
 
 
@@ -57,13 +70,15 @@
     <div>
         <section id="Home">
             <div class="container vdeo">
-                <!-- <iframe width="100" height="315" 
-                    src="https://www.youtube.com/embed/2pMJ3FxcEGg?si=IHX5bwm_O3PTslUe"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe> -->
+                <iframe id="youtube-video" width="800" height="350" 
+                src="https://www.youtube.com/embed/7jUZahfCSMs?autoplay=1&loop=1&playlist=7jUZahfCSMs"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+        </iframe>
+                    
 
-                    <video id="video-field" src="/seyon.mp4" loop autoplay muted></video>
+                    <!-- <video id="video-field" type="video/mp4" src="/seyon.mp4" loop autoplay muted ></video> -->
             </div>
         </section>
         <section>
