@@ -1,84 +1,91 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&family=Poppins&display=swap');
-*
-{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: 0;
-   font-family: 'Poppins', sans-serif;
-   background-color: black;
-   /* background-color: #1b1f24; */
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    /* background-color: #1b1f24; */
 }
 
-
-:root{
-
-    --dark--primary : #1b1f24;
-    --primary:#12bdff;
+html {
+    scroll-behavior: smooth;
 }
 
-nav{
+:root {
+
+    --dark--primary: #1b1f24;
+    --primary: #12bdff;
+}
+
+nav {
     width: 100%;
     position: fixed !important;
     left: 0;
     top: 0;
     box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.5);
     z-index: 10;
-   background:black;
+    background: black;
 }
 
-.navbar-brand
-{
+p{
+    font-size: 16px;
+}
+.navbar-brand {
     font-weight: bold;
     color: white;
     font-size: 50px;
     background: black !important;
 }
 
-.nav-link
-{
-  color: white !important;   
-  font-weight: bold;
-  /* border-bottom:  1px solid var(--primary) transparent !important ; */
+.nav-link {
+    color: white !important;
+    font-weight: bold;
+    /* border-bottom:  1px solid var(--primary) transparent !important ; */
 }
-.nav-link:hover{
-    border-bottom:1px solid white !important;
+
+.nav-link:hover {
+    border-bottom: 1px solid white !important;
 }
+
 .navbar-dark .navbar-brand {
     color: #fff;
     font-size: 50px;
 }
-
-.video-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: black;
-    margin-top: 20px;
+.container.vdeo {
+    margin: 0px auto;
+    text-align: center;
+    padding-top: 6rem;
 }
+video#video-field {
+    width: 100%;
+}
+/* 
 .video-container iframe {
-    /* max-width: 90%; */
+    max-width: 90%;
     width: 100%;
     max-height: 90%;
     height: 400px;
-}
+} */
+
 @media (min-width: 992px) {
     .navbar-expand-lg .navbar-collapse {
         display: -ms-flexbox;
         display: flex;
         -ms-flex-preferred-size: auto;
         flex-basis: auto;
-        justify-content: center ;
+        justify-content: center;
         align-items: center;
     }
 }
 
 .forms {
-    margin: 60px;
     padding: 20px;
-    background-color: black; /* Set background color to black */
-    color: white; /* Set text color to white */
+    background-color: black;
+    /* Set background color to black */
+    color: white;
+    /* Set text color to white */
     box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.3);
 }
 
@@ -101,20 +108,21 @@ input[type="text"],
 input[type="email"],
 input[type="tel"],
 textarea {
-    width: 90%;
+    width: 91%;
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    color: black; /* Set input text color to black */
-    background-color: white; /* Set input background color to white */
+    color: black;
+    /* Set input text color to black */
+    background-color: white;
+    /* Set input background color to white */
 }
 
 
 input[type="text"],
-input[type="email"]
-{
-  width: 45%;
+input[type="email"] {
+    width: 45%;
 }
 
 button[type="submit"] {
@@ -140,9 +148,11 @@ button[type="submit"]:hover {
 
 #navbarTogglerDemo02 {
     justify-content: end;
-    padding-right: 15rem;
+    /* padding-right: 15rem; */
 }
-
+ul.navbar-nav.ms-auto.mb-2.mb-lg-0 {
+    gap: 12px;
+}
 .col-lg-2.col-md-2.col-sm-12.col-sm-12 {
     margin-top: 20px;
 }
@@ -153,4 +163,65 @@ button[type="submit"]:hover {
 
 .bg-dark {
     background-color: black !important;
+} */
+
+.flowers {
+    text-align: -webkit-center;
+}
+
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    row-gap: 20px;
+}
+
+/* 
+@media (min-width: 320px) {
+    input[type="text"],
+input[type="email"]
+
+{
+  width: 115%;
+  margin-top: 20px;
+
+}
+
+}
+
+@media (min-width: 320px) {
+    input[type="tel"]
+    
+
+{
+    width: 212px;
+}
+
+@media (min-width: 1170px) {
+    input[type="tel"]
+    
+
+{
+    width: 650px;
+}
+
+}
+
+@media (min-width: 1140px) {
+    input[type="text"],
+    input[type="email"]
+    {
+      width: 48%;
+    }
+}
+
+@media (min-width: 1140px) {
+    input[type="email"]
+    {
+      width: 50%;
+    }
 } */
