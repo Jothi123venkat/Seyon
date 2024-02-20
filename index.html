@@ -14,22 +14,21 @@
     <style>
     </style>
 </head>
-<script>
-    // Get the iframe element
-    var iframe = document.getElementById("youtube-video");
 
-    // Function to autoplay and loop the video
-    function playVideo() {
-        iframe.contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
-    }
-
-    // Autoplay the video when the iframe loads
-    iframe.onload = function() {
-        playVideo();
-    };
-</script>
 <body>
+    <!-- <script src="https://www.youtube.com/iframe_api"></script>
+    <script>
+        // Function to autoplay and loop the video
+        function playVideo() {
+            var iframe = document.getElementById("youtube-video");
+            iframe.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+        }
 
+        // Add an event listener for the iframe's load event
+        document.getElementById("youtube-video").addEventListener("load", function() {
+            playVideo();
+        });
+    </script> -->
 
     <div>
         <div class="nav">
@@ -78,7 +77,9 @@
         </iframe>
                     
 
-                    <!-- <video id="video-field" type="video/mp4" src="/seyon.mp4" loop autoplay muted ></video> -->
+                    <!-- <video id="video-field"  loop autoplay muted >
+                        <source src="/seyon.mp4" type="video/mp4">
+                    </video> -->
             </div>
         </section>
         <section>
