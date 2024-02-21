@@ -69,6 +69,13 @@ video#video-field {
     height: 400px;
 } */
 
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 0 !important;
+}
+
 @media (min-width: 992px) {
     .navbar-expand-lg .navbar-collapse {
         display: -ms-flexbox;
